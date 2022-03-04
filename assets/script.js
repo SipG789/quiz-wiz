@@ -1,6 +1,20 @@
-// TODO: Show HTML 
-// TODO: Start button that I can click to start the quiz 
-    // listening events for starting quiz (on click)
+// TO DO: Start button that I can click to start the quiz 
+var startQuiz = document.querySelector("#start-button");
+
+
+// TODO: listening events for starting quiz (on click)
+var startTheQuiz = function (event) {
+
+    // start the quiz 
+    var beginQuizEl = event.target;
+
+    // when start button is clicked 
+    if (beginQuizEl.matches(".btn")) {
+        window.confirm("You are about to begin the quiz! Are you ready?");
+        
+    }
+
+};
 // TODO: timer starts when I see first question 
     // setInterval to do countdown (global?)
 // TODO: Display question and answers
@@ -16,3 +30,9 @@
 // TODO: stop game when all are answered or timer reaches 0 
 // TODO: save user score 
     // TODO: ask user for initials to save 
+
+
+
+
+// TODO: add event listeners 
+startQuiz.addEventListener("click", startTheQuiz);

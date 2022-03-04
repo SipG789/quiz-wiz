@@ -19,12 +19,12 @@ header {
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    margin: 250px;
+    margin: 150px 150px 0 150px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 35px;
+    font-size: 55px;
     background-color: var(--primary);
 }
 
@@ -35,8 +35,28 @@ header p {
 .form-group {
     background-color: var(--primary);
 }
+
+.quiz {
+    background-color: var(--primary);
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 150px 150px 0 150px;
+    text-align: center;
+}
+
+.page-form {
+    background-color: var(--primary);
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 150px 0 150px;
+    text-align: center;
+    font-size:x-large;
+}
+
 .btn {
-    font-size: 20px;
+    font-size: x-large;
     background-color: var(--primary);
 }
 
@@ -48,8 +68,19 @@ header p {
     header {
         flex: 1 100%;
         width: auto;
+        margin: auto;
     }
     header p {
         width: 100%;
+    }
+    .page-form {
+        flex: 1 100%;
+        width: auto;
+        margin: auto;
+    }
+    .quiz {
+        flex: 1 100%;
+        width: auto;
+        margin: auto;
     }
 }
