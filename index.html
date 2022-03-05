@@ -16,15 +16,18 @@
 
 <main class="quiz">
 
-    <p class="page-form">
-        Are you a true Beatles fan? Do you think you have what it takes to reach the ultimate high score?<br>
-        Be cautious! Get the answer wrong and your time will be reduced by ten seconds. 
+    <p class="page-form" id="page-form-question">
+
     </p>
     
     <div class="form-group">
       <button class="btn" id="start-button" type="submit">Start Quiz</button>
     </div>
-    
+    <section class="question-group">
+        <h2 class="question-list"></h2>
+        <ul class="list-group" id="questions-to-answer">
+        </ul>
+    </section>
     <img class="fab-four" src="./assets/beatles-1966-tokyo.jpg" alt="The Fab Four" width="auto" height="auto">
 
 </main>
