@@ -5,6 +5,15 @@
 :root {
     --primary: skyblue;
 }
+.container, h2 {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: var(--primary);
+    font-size: x-large;
+    color:chocolate;
+}
 
 .fab-four {
     align-content: center;

@@ -1,5 +1,10 @@
 // TO DO: Start button that I can click to start the quiz 
 var startQuiz = document.querySelector("#start-button");
+// setInterval to do countdown (global?)
+var timerEl = document.getElementById('countdown');
+
+countdown();    
+
 //var formEl = document.querySelector("#questions-to-answer")
 setTimeout(function () {
     var initialPrompt = document.querySelector("#page-form-question");
@@ -8,6 +13,7 @@ setTimeout(function () {
     promptCommand.className = "page-form";
     initialPrompt.append(promptCommand);
 }, 1000);
+
 // TODO: listening events for starting quiz (on click)
 var startTheQuiz = function (event) {
 
@@ -22,10 +28,26 @@ var startTheQuiz = function (event) {
         return questionEl;
     };
 };
-// TODO: timer starts when I see first question 
-// setInterval to do countdown (global?)
-// TODO: Display question and answers
 
+// TODO: Display question and answers
+// TODO: timer starts when I see first question 
+function countdown() {
+    var timeLeft = 90;
+
+    var timeInterval = setInterval(function () {
+        // as long as time left is gerater than 1 
+        if (timeLeft > 1) {
+            timerEl.textContent = timeLeft + ' seconds remaining';
+            timeLeft--;
+        } else if (timeLeft === 1) {
+            timerEl.textContent = timeLeft + ' second remaining';
+            timeLeft--;
+        } else {
+            timerEl.textContent = '';
+            clearInterval(timeInterval);
+        }
+    }, 1000);
+}
 // TODO: list of questions and answers (know which one is correct.... if else ??) 
 // listening event for user selecting answer from the choices 
 // TODO: if I answer correct I am presented with another question
