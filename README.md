@@ -32,5 +32,6 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 
-The link to the website is here: 
+The link to the website is here: https://sipg789.github.io/quiz-wiz/
+
 
