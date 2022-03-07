@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +11,30 @@
 
 <body>
 
-<header>
-    <h1 class="page-title">Beatlemania Quiz-Wiz!</h1>
-    <div class="container">
-        <h2 id="countdown"></h2>
-    </div>
-</header>
+    <header>
+        <h1 class="page-title">Beatlemania Quiz-Wiz!</h1>
+        <div class="container">
+            <h2 id="countdown"></h2>
+        </div>
+    </header>
 
-<main class="quiz">
+    <main class="quiz">
 
-    <p class="page-form" id="page-form-question">
+        <p class="page-form" id="page-form-question"></p>
+        <p class="list-group" id="answer-list-responses"></p>
 
-    </p>
-    
-    <div class="form-group">
-      <button class="btn" id="start-button" type="submit">Start Quiz</button>
-    </div>
-    <section class="question-group">
-        <h2 class="question-list"></h2>
-        <ul class="list-group" id="questions-to-answer">
-        </ul>
-    </section>
-    <img class="fab-four" src="./assets/beatles-1966-tokyo.jpg" alt="The Fab Four" width="auto" height="auto">
+        <div class="button-responses">
+        </div>
+        
+        <div class="form-group">
+            <button class="btn" id="start-button" type="submit">Start Quiz</button>
+            <button class="next-btn" id="next-question">Next</button>
+        </div>
+        <img class="fab-four" src="./assets/beatles-1966-tokyo.jpg" alt="The Fab Four" width="auto" height="auto">
 
-</main>
+    </main>
 
     <script src="./assets/script.js"></script>
 </body>
+
 </html>

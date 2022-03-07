@@ -76,10 +76,18 @@ header p {
     text-align: center;
     font-size:x-large;
 }
+.next-btn {
+    font-size: xx-large;
+    color: white;
+    background-color: darkblue;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
 
 .btn {
     font-size: xx-large;
-    background-color: var(--primary);
+    color: white;
+    background-color: darkblue;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
